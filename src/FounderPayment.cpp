@@ -17,7 +17,7 @@
 #include <boost/foreach.hpp>
 
 CAmount FounderPayment::getFounderPaymentAmount(int blockHeight, CAmount blockReward) {
-	 if (blockHeight < 165000){
+	 if (blockHeight < 170000){
 		 return 0;
 	 }
 	 return blockReward * 0.05;

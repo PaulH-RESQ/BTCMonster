@@ -3781,7 +3781,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, int prevBlockHeigh
     }
     if(!founderTransaction) {
     	LogPrintf("CheckBlock() -- Founder payment of %s is not found\n", block.txoutFounder.ToString().c_str());
-    	return state.DoS(0, error("CheckBlock(XGALAXY): transaction %s does not contains founder transaction",
+    	return state.DoS(0, error("CheckBlock(MON): transaction %s does not contains founder transaction",
     			block.txoutFounder.GetHash().ToString()), REJECT_INVALID, "founder-not-found");
     }
 
